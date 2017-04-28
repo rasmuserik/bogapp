@@ -1,0 +1,18 @@
+{
+  "name": "bogapp",
+  "license": "CC-BY-NC-SA-4.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "pretty": "prettier --write --print-width 72 --single-quote --no-bracket-spacing --jsx-bracket-same-line pages/*.js"
+  },
+  "dependencies": {
+    "next": "^2.3.0-alpha1",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "prettier": "^1.2.2"
+  }
+}
