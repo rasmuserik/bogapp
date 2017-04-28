@@ -1,4 +1,4 @@
-<img src=https://bogapp.solsort.com/icon.png width=96 height=96 align=right>
+<img src=http://bogapp.solsort.com/icon.png width=96 height=96 align=right>
 
 # BiblioteksApp.dk / BogApp.dk
 
