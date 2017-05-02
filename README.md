@@ -2,6 +2,7 @@
 
 # BiblioteksApp.dk / BogApp.dk
 
+Se <http://biblioteksapp.dk> / <http://bogapp.dk>
 BiblioteksApp.dk er den nye lette mobile web/app til de danske biblioteker.
 
 BogApp.dk er den nye inspirationsapp til den danske litteratur.
