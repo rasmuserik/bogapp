@@ -2,13 +2,17 @@
 
 # BiblioteksApp.dk / BogApp.dk
 
-Se <http://biblioteksapp.dk> / <http://bogapp.dk>
-BiblioteksApp.dk er den nye lette mobile web/app til de danske biblioteker.
+Under udvikling, - indeholder forøjeblikket primært kode / noter til eget brug.
 
-BogApp.dk er den nye inspirationsapp til den danske litteratur.
+Se også <http://biblioteksapp.dk> / <http://bogapp.dk>
 
-**Under udvikling, planlagt release: 3. kvartal 2017**
+## Tasks / roadmap
 
-Send en mail til rasmuserik@solsort.com, hvis du vil have *early access*, og være med til lukket beta-test fra *maj* af.
+Version 2:
 
-Feedback og åben diskussion i forbindelse med udvikling foregår på <https://github.com/solsort/bogapp/issues>, alle kommentarer er velkomne og tages med i udviklingen.
+- Landing page on bogapp.dk / biblioteksapp.dk / bibdata.dk / litteraturapp.dk
+- Convert mobibl.solsort.com into closed demo on demo.bogapp.dk, and clean up notes in repository
+
+### Backlog / later
+
+# Landing page content
