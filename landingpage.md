@@ -1,5 +1,6 @@
 Noter/udkast til landingside
 
+NB: foreløbige screenshots and graphics
 # BogApp - inspiration til litteratur
 
 Litteratur-app, der dækker tre domæner:
@@ -60,6 +61,7 @@ TODO
 - ... biblioteker?
 - ... universitet?
 -->
+
 # Roadmap
 
 Roadmap 2017
@@ -68,30 +70,6 @@ Roadmap 2017
 - Juni: Lukket beta med den nye udgave
 - Juli: Beta lukkes op for ikke-indloggede brugere og robotter.
 - August/september: Release version 2.0
-
-<!--
-
-- Forberedelse
-    - Landingsside for BogApp
-    - demo.biblioteksapp.dk - lukket demo af mobibl (alpha/prototype)
-- Første direkte info om projektet til interessenter sendes ud, implementation af version 2 starter
-    - Omskriv mobibl til JavaScript/React
-    - Flyt demo/beta fra at være mobibl til at være den nye implementation af bogapp (beta)
-    - Omskriv rdf.solsort.com til JavaScript/React
-    - Litterær inspiration baseret på recommender-projektet
-    - Opsamling af data
-    - Live statistik/hits
-- Mulige næste trin
-    - Mulighed for brugerskrevne anmeldelser, evt. brugeruploadede forsider
-    - Mere spotify/netflix lignende anbefalinger, - men for litteratur
-    - Undersøg mulighed for integration med andre løsninger (DDB-CMS, openlibrary?, goodreads?, litteratursiden, DBCs data, bogpriser?, ..)
-    - Ebøger fra Gutenberg, + text-to-speech
-    - P2P lån mellem brugere
-    - Værktøj for bibliotekarer, - bog lister etc., integration med bibliotekssystem
-    - Egne bogsamlinger
-    - Fotografer bog -> find bog
--->
-
 
 
 # Planlagt funktionalitet
@@ -102,21 +80,23 @@ Følgende funktionalitet er minimumskrav i første version.
 - Kort med folkebiblioteker og åbningstider
 - Information om folkebibliotekernes tilbud
 - Semantisk opmarkerede bibliografiske data, med mulighed for at bestille til biblioteket
-- Anbefalinger / inspiration
+- Anbefalinger / inspiration baseret på recommender-projekt
+- Opsamling af data
 
-derudover kan følgende tilføjes, hvis tiden og omstændigheder tillader det:
+brainstorm over funktionalitet der kan følgende tilføjes, hvis tiden og omstændigheder tillader det:
 
 - Brugerskrevne anmeldelser og debat
-- Brugerens eget bibliotek
+- Brugerens eget bibliotek / egen bogsamling
 - P2P lån mellem brugere
 - E-bøger fra Gutenberg, med text-to-speech oplæsning
-- Integration med andre systemer (i.e. DDB-CMS?, openlibrary?, goodreads?, litteratursiden?, DBC?, bogpriser?, mofibo?, ...)
+- Integration med andre systemer hvis åbne for det (i.e. DDB-CMS?, openlibrary?, goodreads?, litteratursiden?, DBC?, bogpriser?, mofibo?, infomedia?, ...)
 - Mere spotify/netflix lignende litteratur-anbefalinger
 - Skan en bogforside og find bog/anmeldelser ud fra dette
-- Offentlig statistik for anvendelse
+- Live statistik for anvendelse
 - Nyheder/events fra andre kilder
 - Nyheder/events fra nærmeste folkebiblioteker
 - Push-events ved lånerstatus etc.
+- Værktøj for biblioteksmedarbejdere
 
 # Baggrundserfaring
 
