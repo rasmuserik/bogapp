@@ -10,6 +10,13 @@ body {
   margin: 3em;
   max-width: 60ex;
 }
+.screenshot {
+  max-width: 300px;
+  max-height: 300px;
+  margin: 10px;
+  outline: 1px solid black;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+}
     </style>
   </head>
   <body>
@@ -21,6 +28,8 @@ body {
 
     <p>Send en mail til rasmuserik@solsort.com, hvis du vil have <em>early access</em>, og være med til lukket beta-test fra <em>maj</em> af.</p>
 
+    <hr>
+    <h1>Noter - under omskrivning</h1>
     <p>
     Projektet bliver tilgængeligt via følgende domæner
     <ul>
@@ -30,5 +39,124 @@ body {
     </ul>
     Disse kombinere, og bygger videre på kode og erfaringer fra forskellige tidligere projekter: MoBibl, BibApp, RDF/linked-data, recommender, ...
     </p>
+    <h1>BogApp - inspiration til litteratur</h1>
+    <p>Litteratur-app, der dækker tre domæner:</p>
+    <ul>
+      <li>biblioteksapp.dk - en let webapp: find bøger og info om biblioteker, se lånerstatus og bestil, etc.</li>
+      <li>bibdata.dk - gør bibliografiske data tilgængelige.</li>
+      <li>bogapp.dk - inspiration til litteratur.</li>
+    </ul>
+    <h1>CTA</h1>
+    <p>
+    Prøv beta-udgaven,<br>
+    og hold dig opdateret<br>
+    med projektet:<br>
+    TODO
+    <!--
+    <input id=signup-input type=email ><br>
+    <button id=signup-button>Få adgang til app'en</button><br>
+    -->
+    <small><em id=signup-status></em></small>
+</p>
+    <script>
+document.getElementById('signup-button').addEventListener('click', signup)
+function signup() {
+  var email = document.getElementById('signup-input').value
+  if(!email) {
+      return
+  }
+  console.log('email', email);
+  //document.getElementById('signup-status').innerHTML = "Email afsendt til " + email + "<br> kontakt <a href=\"http://rasmuserik.com\">RasmusErik</a>,<br> hvis du ikke har modtaget adgang til demo'en<br> indenfor de næste 5-10 minutter.";
+  //document.getElementById('signup-status').innerHTML = "Email afsendt til " + email + "<br> kontakt <a href=\"http://rasmuserik.com\">RasmusErik</a>,<br> hvis du ikke har modtaget adgang til demo'en<br> indenfor de næste 5-10 minutter.";
+
+}
+    </script>
+    <h1>Baggrund og erfaring</h1>
+    <p>BogApp kombinere erfaringer fra</p>
+    <ul>
+      <li>Løbende dialog med biblioteker, omkring ønsker til mobilapp, etc.</li>
+      <li>MoBibl - Mobil Biblioteksapp, prototype lanceret i 2016</li>
+      <li>Den Åbne Platform og Hack4DK biblioteksdata -</li>
+      <li>BibApp - litterær inspirationsapp, lanceret i 2015, vandt DBCs pris for bedste kulturapp</li>
+      <li>Recommender og data science eksperimenter på åbne biblioteksdata</li>
+      <li>Visualisering af relationer</li>
+      <li>Eksponering af RDF/linked-data</li>
+    </ul>
+    <p>Første trin er en konsolidering af erfaringer fra ovenstående projekter i én samlet webapp, - lavet på en måde så den vil være let for andre at bygge videre på.</p>
+    <p>
+<img src="img/mobibl-screenshot1.png" class=screenshot>
+<img src="img/mobibl-screenshot2.png" class=screenshot>
+<img src="img/mobibl-screenshot3.png" class=screenshot>
+<img src="img/mobibl-screenshot4.png" class=screenshot>
+    </p>
+
+    <p>
+<img src="img/bibapp-screenshot1.jpg" class=screenshot>
+<img src="img/bibapp-screenshot2.jpg" class=screenshot>
+    </p>
+    <h1>Samarbejde</h1>
+    <p>App'en bliver lavet i en teknologi, så flest mulige vil være i stand til at bygge videre på den:</p>
+    <ul>
+      <li>biblioteker, der har lokal udvikling</li>
+      <li>studerende</li>
+      <li>open source udviklere</li>
+      <li>leverandører, herunder i TING-communitiet</li>
+    </ul>
+    <p>Konkret betyder dette, at den udvikles i JavaScript / React.</p>
+
+    <h1>Roadmap / planlagt funktionalitet</h1>
+    <p>Følgende funktionalitet er minimumskrav i første version.</p>
+    <ul>
+      <li>Søg / bestil / lånerstatus</li>
+      <li>Kort med folkebiblioteker og åbningstider</li>
+      <li>Information om folkebibliotekernes tilbud</li>
+      <li>Semantisk opmarkerede bibliografiske data, med mulighed for at bestille til biblioteket</li>
+      <li>Anbefalinger / inspiration baseret på recommender</li>
+      <li>Opsamling af data</li>
+    </ul>
+    <p>Brainstorm over funktionalitet der kan følgende tilføjes, hvis tiden og omstændigheder tillader det:</p>
+    <ul>
+      <li>Brugerskrevne anmeldelser og debat</li>
+      <li>Brugerens eget bibliotek / egen bogsamling</li>
+      <li>P2P lån mellem brugere</li>
+      <li>E-bøger fra Gutenberg, med text-to-speech oplæsning</li>
+      <li>Integration med andre systemer hvis åbne for det (i.e. DDB-CMS?, openlibrary?, goodreads?, litteratursiden?, DBC?, bogpriser?, mofibo?, infomedia?, ...)</li>
+      <li>Mere spotify/netflix lignende litteratur-anbefalinger</li>
+      <li>Skan en bogforside og find bog/anmeldelser ud fra dette</li>
+      <li>Live statistik for anvendelse</li>
+      <li>Nyheder/events fra andre kilder</li>
+      <li>Nyheder/events fra nærmeste folkebiblioteker</li>
+      <li>Push-events ved lånerstatus etc.</li>
+      <li>Værktøj for biblioteksmedarbejdere</li>
+    </ul>
+<!--
+    <h1>Baggrundserfaring</h1>
+    <p>Den primære projektkoordinator og udvikler på BogApp er RasmusErik, med følgende relevante erfaring:</p>
+    <ul>
+      <li>2017 <strong>under udvikling:</strong> <em>BogApp - konsolidering af erfaringer fra tidligere projekter: linked-data, anbefalinger, bibapp, mobibl</em></li>
+      <li>2017 <strong>under udvikling:</strong> <em>endnu ikke offentligtgjort projekt: TBA</em></li>
+      <li>2017 <strong>under udvikling:</strong> Generiske Forsider</li>
+      <li>2016/17 <em>Vidensdeling om den åbne platform med biblioteker, IVA, etc.</em></li>
+      <li>2016/17 Enkelte konsulenttimer om den åbne platform ifbm. DDB-App</li>
+      <li>2016 <em>Udarbejdelse af tilbud på DDB-App i samarbejde med SocialSquare (som vi ikke vandt).</em></li>
+      <li>2016 <em>MoBibl - fuldt funktionel prototype - klar efterår 2016 - <strong>løbende dialog med bibliotekerne</strong> - matcher ifølge bibliotekarer behovet bedre end DDB-App leveret i 2017 :( - lav interesse fra beslutningstagere pga. DDB-app udbuddet, derfor skrinlagt.</em></li>
+      <li>2016 Stor konsulentopgave ifbm. udviklingen af den åbne platform (for DBC)</li>
+      <li>2015 <em>BibApp Inspirations-app (vandt DBCs konkurrence om bedste kulturapp)</em></li>
+      <li>2015/16 <em>Eksperimenter med at eksponere biblioteksdata som linked open data</em></li>
+      <li>2014/15 <em>Recommender - byggede tydeligt bedre anbefalingsservice end daværende ADHL - lav interesse for projektet blandt beslutningstagere pga. forbedring af anbefalinger også er på DDB-backlog'en, derfor skrinlagt</em></li>
+      <li>2014 Visualisering af Relationer</li>
+      <li>2013-nu Selvstændig virksomhed</li>
+      <li>2009-13 Softwareudvikler hos DBC, herunder fokus på mobilstrategi, og forskellige mobile prototyper - deltager i Mobile.TING, og derefter Bibliotekernes Udviklernetværk.</li>
+      <li>2009 Kandidat i datalogi fra KU med speciale-afhandling om programmeringssprog til mobiltelefoner</li>
+      <li>2007/8 Projektleder digitaliseringsprojekt KKB</li>
+      <li>2006 <em>Eksperimenter med automatisk tvær-sproglig thesaurus-generering</em></li>
+      <li>2005 Bachelor i datalogi, med afhandling om komprimerede datastrukturer (eksempelvis relevante i søgemaskiner etc.)</li>
+      <li>2004 Arbejde i IT-Lab på DB(nu IVA)</li>
+      <li>2004 Udviklede min første biblioteksrelevante mobilapp (før smartphones, skrevet i J2ME, DK5-træningsprogram)</li>
+      <li>2003/2004 studier på DB(nu IVA)</li>
+      <li>Stor erfaring med softwareudvikling (har lavet mange andre softwareprojekter i den private sektor, ifbm. forskning og undervisning, og også holdt foredrag og konferenceoplæg eksempelvis HTML5 og JavaScript etc.)</li>
+    </ul>
+    <p>Emner i <em>kursiv</em> er egenfinansierede projekter, som sjældent har givet økonomisk afkast, men som ofte har skubbet IT i bibliotekssektoren fremad. BogApp er nok det sidste projekt i bibliotekssektoren hvor jeg vil dække udviklingen af egen lomme.</p>
+-->
   </body>
 </html>
