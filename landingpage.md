@@ -9,8 +9,6 @@ Litteratur-app, der dækker tre domæner:
 - bibdata.dk - gør bibliografiske data tilgængelige.
 - bogapp.dk - inspiration til litteratur.
 
-BogApp er under udvikling. Forventet release: *3. kvartal 2017*.
-
 # CTA
 
 Prøv beta-udgaven,
