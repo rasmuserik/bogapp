@@ -5,17 +5,20 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
+    "test": "jest",
     "pretty": "prettier --write --print-width 72 --single-quote --no-bracket-spacing --jsx-bracket-same-line pages/* components/* lib/*",
     "export": "next build && next export",
-    "build-doc":"documentation build components/*.js pages/*.js lib/*.js -f html -g true -o out/codedoc",
-    "gh-pages": "gh-pages -d out",
+    "documentation": "documentation build components/*.js pages/*.js lib/*.js -f html -g true -o out/codedoc",
+    "gh-pages": "cp -a gh-pages/* out/ && gh-pages -d out",
     "release": "npm run export && npm run documentation && npm run gh-pages && rm -rf out"
   },
   "dependencies": {
     "jest": "^20.0.1",
     "next": "^3.0.0-beta3",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.4",
+    "redux": "^3.6.0"
   },
   "devDependencies": {
     "documentation": "4.0.0-rc.1",

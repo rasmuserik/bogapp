@@ -1,12 +1,6 @@
 <img src=http://bogapp.solsort.com/icon.png width=96 height=96 align=right>
 
-# BogApp
-
-The goal for this project is to be
-
-- the best literature/library app
-- fully open source
-- a collaborative projects
+The goal for this project is to become the best open source literature/library app.
 
 Tasks / subprojects currently in progress
 

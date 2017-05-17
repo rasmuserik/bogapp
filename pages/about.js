@@ -1,3 +1,7 @@
-import App from '../components/App';
+import {app} from '../components/App';
 
-export default () => <App>hello</App>;
+export default app(() =>
+  <div>
+    about
+  </div>
+);
