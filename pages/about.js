@@ -1,6 +1,7 @@
-import {app} from '../components/App';
+import React from 'react';
+import {app} from '../components/app';
 import {connect} from 'react-redux';
-import Work from '../components/Work';
+import Work from '../components/work';
 import Link from 'next/link';
 
 function About(props) {

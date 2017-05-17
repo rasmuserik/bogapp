@@ -1,4 +1,5 @@
-import {store} from '../lib/store.js';
+import {store} from '../lib/store.js'
+import React from 'react'
 import { Provider } from 'react-redux'
 
 /** 

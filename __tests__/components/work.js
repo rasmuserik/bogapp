@@ -1,7 +1,7 @@
 'use strict';
 
 import React from 'react';
-import Work from '../../components/Work';
+import Work from '../../components/work';
 import renderer from 'react-test-renderer';
 
 it('renders correctly', () => {
