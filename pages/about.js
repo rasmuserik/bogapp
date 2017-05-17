@@ -1,1 +1,3 @@
-export default () => <div>TODO</div>;
+import App from '../components/App';
+
+export default () => <App>hello</App>;

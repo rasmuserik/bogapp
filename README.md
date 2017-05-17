@@ -1,57 +1,96 @@
 <img src=http://bogapp.solsort.com/icon.png width=96 height=96 align=right>
 
-# BiblioteksApp.dk / BogApp.dk
+# BogApp
 
-Under udvikling, - indeholder forøjeblikket primært kode / noter til eget brug.
+The goal for this project is to be
 
-Se også <http://biblioteksapp.dk> / <http://bibdata.dk> / <http://bogapp.dk>
-Roadmap/plan + diverse noter
+- the best literature/library app
+- fully open source
+- a collaborative projects
+
+Tasks / subprojects currently in progress
+
+- Setup project infrastructure
+- Merge core functionality of <a href="https://github.com/solsort/mobibl">MoBibl</a> and <a href="https://github.com/solsort/rdf">solsort/RDF</a> into the project
+- Document decisions / approach
+
+**Join the project** You can help:
+
+- **developers:** <!--  -->
+- **librarians:** <!-- -->
+- **designers:** <!-- -->
+- **generalists:** <!-- -->
+- **organisations:** <!-- -->
+
+TODO: link to starter issues, for each category of collaborator.
+
+# Contributing
+
+TODO: introduction: how to make a pull request (fork|feature-branch)
+
+# Roadmap
+
+## v0.1.0
+
+Full rewrite of MoBibl and RDF into JavaScript
+
+- basic functionality from <a href="https://github.com/solsort/mobibl">MoBibl</a> 
+- basic functionality <a href="https://github.com/solsort/rdf">solsort/RDF</a>
+
+# Steering
+
+- Keep number dependencies low
+- Choose mainstream technologies
+- Major decisions should be documented here, with underlying reason
+
+List of decisions with motivation/reason:
+
+<details>
+  <summary><b>Design:</b> <a href="https://material.io/guidelines">Material</a> 
+  </summary>
+  Material gives a common foundation and language for reasoning about the design.
+</details>
+
+<p><details>
+  <summary><b>Build framework:</b> </summary>
+The vision is that the project should be usable internationally.
+</details></p>
+
+<p><details>
+  <summary><b>Inline code documentation:</b>[as JSDoc](http://usejsdoc.org/)</summary>
+  Probably use https://github.com/documentationjs/documentation.
+</details></p>
 
 
-# Plan/backlog
+<p><details>
+  <summary><b>Working language:</b> English</summary>
+The vision is that the project should be usable internationally.
+</details></p>
 
-Plan:
+<p><details>
+  <summary><b>Coding convention:</b> <a "href=https://github.com/airbnb/javascript">Airbnb JavaScript Style Guide</a></summary>
+</details></p>
 
-- √Foranalyse
-- √Opret domæner
-- Draft landingside
-    - √Formuler indhold
-    - Mailingliste
-    - Design
-    - Analytics + Facebook page for project :(
-- Forretningsplan, interessentanalyse, markedsanalyse, swat, business-model-canvas, etc.
-- Sæt adgangsbegrænsning på mobibl + ændr titel + opryd noter
-- Flyt mobibl.solsort.com til demo.biblioteskapp.dk
-- Announcement + kontakt potentielle samarbejdspartnere, med bekræftigelse
-    - opensource udviklere
-    - leverandører (garanter for mulighed for videreudvikling, reducér busfaktor)
-    - udviklere på bibliotekerne (udviklernetværk)
-    - universitetsverden
-    - bibliotekarer
-- Porter MoBibl til JavaScript/React
-- Integrer med RDF
-- Integrer anbefalingsservice
+<p><details>
+  <summary><b>Layout:</b> flex / grid?</summary>
+  While the initial version is web-app only, the intention is to make it easy to port to react-xp, or similar later on.
+</details></p>
 
 
-- Programmér version 2
-- opdater solsort.com til at beskrive at dette er startup-virksomheden bag bogapp. Flyt blog fra solsort.com til rasmuserik.com
-- kontakt potentielle indholds-samarbejdspartnere
-    - boganmeldere
-    - anmeldere
-    - forlag etc.
-- tilføj community-funktionalitet
+TODO: describe motivation for each dependency in project
+TODO: describe design choices
 
 
-# Noter
+# History
 
-Relaterede projekter:
+TODO add details here
 
-- <http://goodreads.com>
-- <http://openlibrary.org>
-- <http://bibliotek.dk>
-- <http://litteratursiden.dk>
-- <http://bogpriser.dk>
-- <http://saxo.dk>
-- DDB-CMS
-- Redia App
-- DDB-App
+- 2017 *BogApp* 
+- 2016 Response to *Request for Tender* for danish public library app.
+- 2016 *MoBibl*
+- 2016 *Den Åbne Platform*
+- 2015 *BibApp*
+- 2015/2016 Semantic markup of bibliographic data (*RDF*)
+- 2014/2015 *Related-webservice*
+- 2014 *Visualisering-af-relationer*
+

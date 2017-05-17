@@ -6,7 +6,10 @@
     "build": "next build",
     "start": "next start",
     "pretty": "prettier --write --print-width 72 --single-quote --no-bracket-spacing --jsx-bracket-same-line pages/* components/* lib/*",
-    "gh-pages": "next build && next export && cp -a gh-pages/* out && gh-pages -d out && rm -rf out"
+    "export": "next build && next export",
+    "build-doc":"documentation build components/*.js pages/*.js lib/*.js -f html -g true -o out/codedoc",
+    "gh-pages": "gh-pages -d out",
+    "release": "npm run export && npm run documentation && npm run gh-pages && rm -rf out"
   },
   "dependencies": {
     "jest": "^20.0.1",
@@ -15,6 +18,7 @@
     "react-dom": "^15.5.4"
   },
   "devDependencies": {
+    "documentation": "4.0.0-rc.1",
     "gh-pages": "^1.0.0",
     "prettier": "^1.2.2"
   }
