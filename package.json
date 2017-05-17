@@ -5,14 +5,17 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "pretty": "prettier --write --print-width 72 --single-quote --no-bracket-spacing --jsx-bracket-same-line pages/*.js"
+    "pretty": "prettier --write --print-width 72 --single-quote --no-bracket-spacing --jsx-bracket-same-line pages/* components/* lib/*",
+    "gh-pages": "next build && next export && cp -a gh-pages/* out && gh-pages -d out && rm -rf out"
   },
   "dependencies": {
-    "next": "^2.3.0-alpha1",
+    "jest": "^20.0.1",
+    "next": "^3.0.0-beta3",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   },
   "devDependencies": {
+    "gh-pages": "^1.0.0",
     "prettier": "^1.2.2"
   }
 }
