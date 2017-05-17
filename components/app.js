@@ -26,7 +26,7 @@ export function app(title, Component) {
         <div>
           <Head>
             <meta name="viewport" content="width=device-width" />
-            <link rel="stylesheet" href="https://unpkg.com/react-md@1.0.13/dist/react-md.deep_purple-pink.min.css" />
+            <link rel="stylesheet" href="https://unpkg.com/react-md@1.0.13/dist/react-md.light_green-light_blue.min.css" />
             <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Roboto:400,500,700" />
             <link rel="icon" href="/icon.png" />
             <title>{title}</title>
