@@ -9,8 +9,8 @@
     "pretty": "prettier --write --print-width 72 --single-quote --no-bracket-spacing --jsx-bracket-same-line pages/* components/* lib/*",
     "export": "next build && next export",
     "documentation": "documentation build components/*.js pages/*.js lib/*.js -f html -g true -o out/codedoc",
-    "gh-pages": "cp -a gh-pages/* out/ && gh-pages -d out",
-    "release": "npm run export && npm run documentation && npm run gh-pages && rm -rf out"
+    "gh-pages": "cp -a gh-pages/* gh-pages/.[a-z]* out/ && gh-pages -t -d out",
+    "release": "rm -rf out ; npm run export && npm run documentation && npm run gh-pages"
   },
   "dependencies": {
     "jest": "^20.0.1",
