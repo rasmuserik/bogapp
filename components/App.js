@@ -1,3 +1,5 @@
+import {store} from '../lib/store.js';
+
 /** 
  * Higher order component, that should be used to wrap all pages
  */
@@ -23,11 +25,13 @@ export function app(Component) {
    * Figure out host/url
    */
   App.getInitialProps = async function(o) {
+    store.dispatch({type: 'URL_QUERY', query: o.query});
     return {
       host: typeof location !== 'undefined'
         ? location.host
         : o.req && o.req.headers && o.req.headers.host,
-      url: o.url
+      url: o.asPath,
+      query: o.query
     };
   };
 
