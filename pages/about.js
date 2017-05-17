@@ -1,32 +1,19 @@
 import React from 'react';
 import {app} from '../components/app';
-import {connect} from 'react-redux';
-import Work from '../components/work';
-import Link from 'next/link';
 
-function About(props) {
-  return <div>
-    <Work bib={{
-      title: 'hello world'
-    }}/>;
-    <Link href={'?' + Math.random()}>hi</Link>
-    {JSON.stringify(props)}
-    about
-  </div>
-}
 
-function mapStateToProps(state) {
-  return {
-    query: state.get('query').toJS()
-  }
-}
+export default app('About', (props) => <div>
 
-function mapDispatchToProps (dispatch) {
-  return {
-    someFn: (args) => {
-      dispatch({type: 'FOO', val: 'bar'});
-    }
-  }
-}
+  <h1>BogApp.dk / BibData.dk / BiblioteksApp.dk</h1>
+  <p>
+  This is an open source literature/library app under development.
+</p>
 
-export default app('About', connect(mapStateToProps, mapDispatchToProps)(About));
+<p>
+  See <a href="https://github.com/solsort/bogapp">github:solsort/bogapp</a> for details.
+</p>
+
+<p>
+  State of the project: currently rewriting the previous version: <a href="http://mobibl.solsort.com">MoBibl</a> as JavaScript app using Material Design. Not any functionality / anything to see here yet...
+</p>
+</div>);
