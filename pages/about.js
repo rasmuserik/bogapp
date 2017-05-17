@@ -1,9 +1,13 @@
 import {app} from '../components/App';
 import {connect} from 'react-redux';
+import Work from '../components/Work';
 import Link from 'next/link';
 
 function About(props) {
   return <div>
+    <Work bib={{
+      title: 'hello world'
+    }}/>;
     <Link href={'?' + Math.random()}>hi</Link>
     {JSON.stringify(props)}
     about

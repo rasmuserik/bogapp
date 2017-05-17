@@ -6,6 +6,7 @@
     "build": "next build",
     "start": "next start",
     "test": "jest",
+    "update-test": "jest -u",
     "prettier": "prettier --write --print-width 72 --single-quote --no-bracket-spacing --jsx-bracket-same-line pages/* components/* lib/*",
     "export": "next build && next export",
     "documentation": "documentation build components/*.js pages/*.js lib/*.js -f html -g true -o out/codedoc",
@@ -22,8 +23,10 @@
     "redux": "^3.6.0"
   },
   "devDependencies": {
+    "babel-jest": "^20.0.3",
     "documentation": "4.0.0-rc.1",
     "gh-pages": "^1.0.0",
-    "prettier": "^1.2.2"
+    "prettier": "^1.2.2",
+    "react-test-renderer": "^15.5.4"
   }
 }

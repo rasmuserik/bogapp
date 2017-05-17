@@ -2,3 +2,4 @@ node_modules/
 yarn.lock
 .next/
 out
+npm-debug.log
