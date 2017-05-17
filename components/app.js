@@ -2,16 +2,9 @@ import {connect} from 'react-redux';
 import {store} from '../lib/store.js'
 import React from 'react'
 import { Provider } from 'react-redux'
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import ToolBar from './toolbar'
-import injectTapEventPlugin from 'react-tap-event-plugin';
 import Head from 'next/head'
 
-try {
-  injectTapEventPlugin()
-} catch(e) {
-  /* ignore silently */
-}
 
 let ControlledToolBar = connect(
   (state) => ({ showMenu: state.getIn(['ui', 'showMenu']) }),
@@ -30,19 +23,19 @@ export function app(title, Component) {
     title = title || 'BogApp.dk';
     return (
       <Provider store={store} >
-        <MuiThemeProvider>
-          <div>
-            <Head>
-              <meta name="viewport" content="width=device-width" />
-                <link rel="icon" href="/icon.png" />
-              <title>{title}</title>
-              <style>{`body { margin: 0 }`}
-              </style>
-            </Head>
-            <ControlledToolBar title={title}/>
-            <Component />
-          </div>
-        </MuiThemeProvider>
+        <div>
+          <Head>
+            <meta name="viewport" content="width=device-width" />
+            <link rel="stylesheet" href="https://unpkg.com/react-md@1.0.13/dist/react-md.deep_purple-pink.min.css" />
+            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Roboto:400,500,700" />
+            <link rel="icon" href="/icon.png" />
+            <title>{title}</title>
+            <style>{`body { margin: 0 }`}
+            </style>
+          </Head>
+          <ControlledToolBar title={title}/>
+          <Component />
+        </div>
       </Provider>
     );
   }
