@@ -29,4 +29,4 @@ function mapDispatchToProps (dispatch) {
   }
 }
 
-export default app(connect(mapStateToProps, mapDispatchToProps)(About));
+export default app('About', connect(mapStateToProps, mapDispatchToProps)(About));

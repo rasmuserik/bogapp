@@ -1,8 +1,7 @@
-'use strict';
-
 import React from 'react';
-import Work from '../../components/work';
 import renderer from 'react-test-renderer';
+
+import Work from '../../components/work';
 
 it('renders correctly', () => {
   const tree = renderer
