@@ -1,7 +1,7 @@
 import {app} from '../components/App';
 
-export default app(() =>
+export default app(() => (
   <div>
     about
   </div>
-);
+));

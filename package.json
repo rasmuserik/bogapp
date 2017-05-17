@@ -6,7 +6,7 @@
     "build": "next build",
     "start": "next start",
     "test": "jest",
-    "pretty": "prettier --write --print-width 72 --single-quote --no-bracket-spacing --jsx-bracket-same-line pages/* components/* lib/*",
+    "prettier": "prettier --write --print-width 72 --single-quote --no-bracket-spacing --jsx-bracket-same-line pages/* components/* lib/*",
     "export": "next build && next export",
     "documentation": "documentation build components/*.js pages/*.js lib/*.js -f html -g true -o out/codedoc",
     "gh-pages": "cp -a gh-pages/* gh-pages/.[a-z]* out/ && gh-pages -t -d out",
