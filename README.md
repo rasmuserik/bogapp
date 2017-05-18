@@ -54,17 +54,16 @@ Non-functional requirements:
 
 List of decisions with motivation/reason:
 
-<details>
+<p><details>
   <summary><b>Design:</b> <a href="https://material.io/guidelines">Material</a> 
   </summary>
   Material gives a common foundation and language for reasoning about the design.
   Following Material Design guidelines, also makes easier to collaborate on components etc. with other projects.
-
   It also feels more native on android, - and is a design language that is being used all across platforms, so users are getting used to it.
-</details>
+</details></p>
 
 <details>
-  <summary><b>Design framework:</b> *undetermined*
+  <summary><b>Design framework:</b> <i>undetermined</i>
   </summary>
   Currently using react-md, - tried material-ui earlier, which didn't play well.
 </details>
