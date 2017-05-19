@@ -93,7 +93,7 @@ TODO: join, core team, collaborators, etc...
 
 TODO add details here
 
-BogApp builds upon the followin projects
+BogApp builds upon the following projects
 
 - 2017 *BogApp* 
 - 2016 Response to *Request for Tender* for danish public library app.
