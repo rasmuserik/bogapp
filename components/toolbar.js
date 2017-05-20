@@ -1,10 +1,11 @@
 import React from 'react';
 import Toolbar from 'react-md/lib/Toolbars';
+import TextField from 'react-md/lib/TextFields/TextField';
 import Button from 'react-md/lib/Buttons';
 import FontIcon from 'react-md/lib/FontIcons';
 import Drawer from 'react-md/lib/Drawers';
 import Link from 'next/link';
-
+import SearchAutoComplete from './searchautocomplete';
 
 export default ({title, showMenu, toggleMenu}) => (
   <div>
@@ -13,7 +14,10 @@ export default ({title, showMenu, toggleMenu}) => (
       title={title}
       nav={<Button onClick={toggleMenu} key="nav" icon>menu</Button>}
       actions={[]}
-    />
+    >
+      <SearchAutoComplete className="md-autocomplete" >
+      </SearchAutoComplete>
+    </Toolbar>
     <Drawer visible={showMenu} onVisibilityToggle={toggleMenu}>
       <Toolbar
         colored
