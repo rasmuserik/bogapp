@@ -9,17 +9,20 @@ import {connect, dispatch} from 'react-redux'
 import { store, set}  from '../lib/store.js';
 import { search } from '../lib/api.js';
 
-function SearchAutoComplete ({q,  isActive,  results}) {
+function SearchAutoComplete ({q,  isActive,  results, onSelect}) {
   return (
   <AutoComplete
     id="searchBooks"
     placeholder="Search"
     data={results}
-    dataLabel="name"
+    dataLabel="book"
     value={q}
-    onChange={() => {
-      search({q});
-      set(["search", "q"], this.props.value);
+    onChange={ (query) => {
+      store.dispatch({type: 'SEARCH_START', q:query});
+      search({q: query});
+    }}
+    onAutocomplete = { (query) => {
+      console.log("onAutoComplete", query);
     }}
     block
     className="md-title--toolbar"
