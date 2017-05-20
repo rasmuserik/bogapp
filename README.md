@@ -1,3 +1,6 @@
+[![Waffle.io](https://img.shields.io/waffle/label/solsort/bogapp/in%20progress.svg)](https://waffle.io/solsort/bogapp)
+[![Travis](https://img.shields.io/travis/solsort/bogapp.svg)](https://travis-ci.org/solsort/bogapp)
+
 <img src=http://bogapp.solsort.com/icon.png width=96 height=96 align=right>
 
 The goal for this project is to become the best open source literature web/app.
