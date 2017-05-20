@@ -4,6 +4,7 @@ import React from 'react';
 import {Provider} from 'react-redux';
 import ToolBar from './toolbar';
 import Head from 'next/head';
+import {isClient, parseQuery} from '../lib/util';
 
 let ControlledToolBar = connect(
   state => ({showMenu: state.getIn(['ui', 'showMenu'])}),
@@ -23,6 +24,7 @@ export function app(Component) {
     }
 
     render() {
+      store.dispatch({type: 'URL_QUERY', query: this.props.query});
       let title = this.props.title;
       return (
         <Provider store={store}>
@@ -52,14 +54,14 @@ export function app(Component) {
   }
 
   App.defaultProps = {
-    title: 'BogApp.dk'
+    title: 'BogApp.dk',
+    query: isClient() && parseQuery(location.search.slice(1))
   }
 
   /** 
    * Figure out host/url
    */
   App.getInitialProps = async function(o) {
-    store.dispatch({type: 'URL_QUERY', query: o.query});
     return {
       host: typeof location !== 'undefined'
         ? location.host
