@@ -13,7 +13,8 @@ let ControlledToolBar = connect(
 /** 
  * Higher order component, that should be used to wrap all pages
  */
-export function app(title, Component) {
+export function app(Component) {
+  let title = 'bogapp';
   /**
    * Root component for all pages
    */

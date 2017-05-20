@@ -1,7 +1,7 @@
 import React from 'react';
 import {app} from '../components/app';
 
-export default app('About', props => (
+export default app(props => (
   <div>
 
     <h1>BogApp.dk / BibData.dk / BiblioteksApp.dk</h1>
