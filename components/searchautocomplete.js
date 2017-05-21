@@ -17,7 +17,9 @@ function  SearchAutoComplete ({q,  isActive,  results})   {
     dataLabel="book"
     value={q}
     onChange={ (query) => {
-      search({q: query});
+      if (!isActive) {
+        search({q: query});
+      }
     }}
     onAutocomplete = { (workId) => {
       open({workId});
@@ -30,7 +32,7 @@ function  SearchAutoComplete ({q,  isActive,  results})   {
 
 function mapStateToProps(state) {
   let props = {
-    isActive: state.getIn('search', 'isActive'),
+    isActive: state.getIn(['search', 'isActive']),
     q: state.getIn(['search', 'q']),
     results: state.getIn(['search', 'results']).toJS()
   };
