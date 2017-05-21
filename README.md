@@ -1,11 +1,13 @@
+<img src=http://bogapp.solsort.com/icon.png width=96 height=96 align=right>
+
+[![Waffle.io](https://img.shields.io/waffle/label/solsort/bogapp/in%20progress.svg)](https://waffle.io/solsort/bogapp)
 [![Waffle.io](https://img.shields.io/waffle/label/solsort/bogapp/in%20progress.svg)](https://waffle.io/solsort/bogapp)
 [![Travis](https://img.shields.io/travis/solsort/bogapp.svg)](https://travis-ci.org/solsort/bogapp)
 
-<img src=http://bogapp.solsort.com/icon.png width=96 height=96 align=right>
 
-The goal for this project is to become the best open source literature web/app.
+BogApp is an open source literature web/app. The initial focus is the danish libraries as a starting point. The intention is to make it international, and extend to wider literary communities than just the libraries.
 
-The initial focus is the danish libraries as a starting point. The intention is to make it international, and extend to wider literary communities than just the libraries.
+You are [welcome to join](CONTRIBUTING.md).
 
 Tasks / subprojects currently in progress
 
