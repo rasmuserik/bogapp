@@ -6,28 +6,26 @@ import Drawer from 'react-md/lib/Drawers';
 import AutoComplete from 'react-md/lib/Autocompletes/Autocomplete'
 
 import {connect, dispatch} from 'react-redux'
-import { store, set}  from '../lib/store.js';
-import { search } from '../lib/api.js';
+import { store, set }  from '../lib/store.js';
+import { search, open } from '../lib/api.js';
 
-function SearchAutoComplete ({q,  isActive,  results, onSelect}) {
-  return (
-  <AutoComplete
+function  SearchAutoComplete ({q,  isActive,  results})   {
+  return <AutoComplete
     id="searchBooks"
     placeholder="Search"
     data={results}
     dataLabel="book"
     value={q}
     onChange={ (query) => {
-      store.dispatch({type: 'SEARCH_START', q:query});
       search({q: query});
     }}
-    onAutocomplete = { (query) => {
-      console.log("onAutoComplete", query);
+    onAutocomplete = { (workId) => {
+      open({workId});
     }}
     block
     className="md-title--toolbar"
     inputClassName="md-text-field--toolbar"
-    />);
+    />;
 }
 
 function mapStateToProps(state) {
@@ -36,7 +34,6 @@ function mapStateToProps(state) {
     q: state.getIn(['search', 'q']),
     results: state.getIn(['search', 'results']).toJS()
   };
-  console.log("props:", props);
   return props;
 }
 

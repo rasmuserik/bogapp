@@ -7,7 +7,7 @@ import Drawer from 'react-md/lib/Drawers';
 import Link from 'next/link';
 import SearchAutoComplete from './searchautocomplete';
 
-export default ({title, showMenu, toggleMenu}) => (
+export default ({title, showMenu, toggleMenu, openWork}) => (
   <div>
     <Toolbar
       colored
@@ -15,7 +15,7 @@ export default ({title, showMenu, toggleMenu}) => (
       nav={<Button onClick={toggleMenu} key="nav" icon>menu</Button>}
       actions={[]}
     >
-      <SearchAutoComplete className="md-autocomplete" >
+      <SearchAutoComplete className="md-autocomplete">
       </SearchAutoComplete>
     </Toolbar>
     <Drawer visible={showMenu} onVisibilityToggle={toggleMenu}>
