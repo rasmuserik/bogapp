@@ -1,33 +1,38 @@
-import React, { PureComponent } from 'react';
+import React, {PureComponent} from 'react';
 import Toolbar from 'react-md/lib/Toolbars';
 import Button from 'react-md/lib/Buttons';
 import FontIcon from 'react-md/lib/FontIcons';
 import Drawer from 'react-md/lib/Drawers';
-import AutoComplete from 'react-md/lib/Autocompletes/Autocomplete'
+import AutoComplete from 'react-md/lib/Autocompletes/Autocomplete';
 
-import {connect, dispatch} from 'react-redux'
-import { store, set }  from '../lib/store.js';
-import { search, open } from '../lib/api.js';
+import {connect, dispatch} from 'react-redux';
+import {store, set} from '../lib/store.js';
+import {search, open} from '../lib/api.js';
+import throttle from 'lodash.throttle';
 
-function  SearchAutoComplete ({q,  isActive,  results})   {
-  return <AutoComplete
-    id="searchBooks"
-    placeholder="Search"
-    data={results}
-    dataLabel="book"
-    value={q}
-    onChange={ (query) => {
-      if (!isActive) {
-        search({q: query});
-      }
-    }}
-    onAutocomplete = { (workId) => {
-      open({workId});
-    }}
-    block
-    className="md-title--toolbar"
-    inputClassName="md-text-field--toolbar"
-    />;
+var throttledSearch = throttle(search, 250);
+
+function SearchAutoComplete({q, isActive, results}) {
+  return (
+    <AutoComplete
+      id="searchBooks"
+      type="search"
+      placeholder="Search"
+      data={results}
+      dataLabel="book"
+      filter={null}
+      dataLabel="name"
+      dataValue="id"
+      className="md-cell"
+      clearOnAutocomplete
+      onChange={query => {
+        throttledSearch({q: query});
+      }}
+      onAutocomplete={workId => {
+        open({workId});
+      }}
+    />
+  );
 }
 
 function mapStateToProps(state) {

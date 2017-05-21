@@ -13,10 +13,8 @@ export default ({title, showMenu, toggleMenu, openWork}) => (
       colored
       title={title}
       nav={<Button onClick={toggleMenu} key="nav" icon>menu</Button>}
-      actions={[]}
-    >
-      <SearchAutoComplete className="md-autocomplete">
-      </SearchAutoComplete>
+      actions={[]}>
+      <SearchAutoComplete className="md-autocomplete" />
     </Toolbar>
     <Drawer visible={showMenu} onVisibilityToggle={toggleMenu}>
       <Toolbar
@@ -24,12 +22,12 @@ export default ({title, showMenu, toggleMenu, openWork}) => (
         title="BogApp.dk"
         nav={<Button onClick={toggleMenu} key="nav" icon>close</Button>}
       />
-      <Link href='/bibdata'>
-      <Button flat style={{width: '100%'}} label="Work info" />
-    </Link>
-      <Link href='/about'>
-      <Button flat style={{width: '100%'}} label="About"  />
-    </Link>
+      <Link href="/bibdata">
+        <Button flat style={{width: '100%'}} label="Work info" />
+      </Link>
+      <Link href="/about">
+        <Button flat style={{width: '100%'}} label="About" />
+      </Link>
     </Drawer>
   </div>
 );
