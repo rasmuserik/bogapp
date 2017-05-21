@@ -1,6 +1,6 @@
 {
   "name": "bogapp",
-  "license": "AGPL-3.0",
+  "license": "MIT",
   "scripts": {
     "dev": "next",
     "build": "next build",
