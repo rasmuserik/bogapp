@@ -56,7 +56,7 @@ export function app(Component) {
   App.defaultProps = {
     title: 'BogApp.dk',
     query: isClient() && parseQuery(location.search.slice(1))
-  }
+  };
 
   /** 
    * Figure out host/url

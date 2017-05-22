@@ -8,13 +8,13 @@ function mapStateToProp(state) {
   let id = state.getIn(['query', 'id'], undefined);
   let bib = state.getIn(['works', id]);
 
-  if(Immutable.isImmutable(bib)) {
+  if (Immutable.isImmutable(bib)) {
     bib = bib.toJS();
   }
 
   return {id, bib};
 }
 
-export default app(connect(
-  mapStateToProp,
-)(({bib}) => <Work bib={bib} />));
+export default app(
+  connect(mapStateToProp)(({bib}) => <Work bib={bib} />)
+);
