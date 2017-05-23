@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <button
+    className=""
+    data-react-toolbox="button"
+    disabled={false}
+    href={undefined}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchStart={[Function]}
+    type="button"
+  >
+    hello
+  </button>
+  <button
+    className=""
+    data-react-toolbox="button"
+    disabled={false}
+    href={undefined}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchStart={[Function]}
+    type="button"
+  >
+    hi
+  </button>
+  <button
+    className=""
+    data-react-toolbox="button"
+    disabled={false}
+    href={undefined}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchStart={[Function]}
+    type="button"
+  >
+    hello
+  </button>
+</div>
+`;

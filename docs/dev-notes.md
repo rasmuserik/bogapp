@@ -1,0 +1,28 @@
+Overview of dependencies:
+
+- basic environment
+    - `next` for building, serverside rendering, and avoiding boilerplate
+    - `react`
+    - `redux`
+    - `react-redux`
+- UI
+    - `react-md` initial ui-library choice, turns out to be difficult for testing, considering moving away from this
+    - `react-toolbox` seems like the best material-ui library for react so far
+    - `classnames` needed by react-toolbox
+    - `react-addons-css-transition-group` needed by react-toolbox
+- testing
+    - `jest`(dev)
+    - `react-dom`
+- utility
+    - `immutable` - version 4+ (release candidate) - due to important added api, i.e. isImmutable
+    - `lodash.throttle`
+- library specific
+    - `openplatform` access to danish bibliographical data
+- infrastructure
+    - `jest` unit testing
+    - `react-dom` needed by jest-setup
+    - `react-test-renderer` needed by jest-setup
+    - `babel-jest` needed by jest-setup
+    - `gh-pages` easy deployment of static app
+    - `documentation` easy generation of api-documentation
+    - `prettier` enforce coding style
