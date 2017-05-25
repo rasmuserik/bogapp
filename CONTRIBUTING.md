@@ -5,13 +5,17 @@
 Feel free to join our [public discussion channel](https://riot.im/app/#/room/#mobibl:matrix.org) on <https://riot.im> and say hi.
 We try to meet there on Sundays at 19:30 (CEST summer/CET winter).
 
+Also feel free to star the project, and tell other about it.
+
 To help out, you
 can just start working on whatever you are interested in :)
-or you can take on any task, that is not marked `in progress` or `ready`
+or you can take on any task, that is not marked `in progress` or `ready`.
+
+The [non-technical](https://github.com/solsort/bogapp/labels/non-technical) issues, are those that can be done without writing any code.
 
 We [plan and manage the project](https://github.com/solsort/bogapp/issues) using github issues, please add ideas/issues, comment on existing issues etc.  To get an overview of the ongoing work see <https://waffle.io/solsort/bogapp>.
 
-## Guidelines
+## Our approach
 
 <p><details>
   <summary><b>Working language:</b> English</summary>
@@ -41,6 +45,7 @@ The first version of the app is made in english, and then i18n to danish.
 <p><details>
   <summary><b>Issue tracking:</b><a href="https://github.com/solsort/bogapp">github issues</a></summary>
 
+We use the following tags
 - [starter](https://github.com/solsort/bogapp/labels/starter) issues that are easy to get started on
 - [in progress](https://github.com/solsort/bogapp/labels/in%20progress)
 - [ready](https://github.com/solsort/bogapp/labels/ready)

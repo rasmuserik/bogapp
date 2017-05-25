@@ -4,51 +4,16 @@
 [![Waffle.io](https://img.shields.io/waffle/label/solsort/bogapp/in%20progress.svg)](https://waffle.io/solsort/bogapp)
 [![Travis](https://img.shields.io/travis/solsort/bogapp.svg)](https://travis-ci.org/solsort/bogapp)
 
+BogApp is an open source literature web/app *under development*. The initial focus is the danish libraries as a starting point. The intention is to make it international, and extend to wider literary communities than just the libraries.
 
-BogApp is an open source literature web/app. The initial focus is the danish libraries as a starting point. The intention is to make it international, and extend to wider literary communities than just the libraries.
+You are [welcome to join](CONTRIBUTING.md), see [CONTRIBUTING.md](CONTRIBUTING.md)
 
-You are [welcome to join](CONTRIBUTING.md).
+First version is a rewrite of the functionality from <https://mobibl.solsort.com> changing the following:
 
-Tasks / subprojects currently in progress
-
-- Setup project infrastructure
-- Merge core functionality of <a href="https://github.com/solsort/mobibl">MoBibl</a> and <a href="https://github.com/solsort/rdf">solsort/RDF</a> into the project
-- Document decisions / approach / tasks
-
-
-# Roadmap
-
-## v0.1.0 
-
-Core functionality:
-
-- rewrite basic functionality from <a href="https://github.com/solsort/mobibl">MoBibl</a> 
-- rewrite basic functionality from <a href="https://github.com/solsort/rdf">solsort/RDF</a>
-- sections
-    - *bogapp* general information about books (and the app)
-    - *bibdata*  bibliographic data 
-    - *biblioteksapp* information about / from the libraries
-- serverside rendering / search engine optimised, to encourage discovery of literature through organic search
-
-Non-functional requirements:
-
-- new design(Material), probably partly based on DDB-App when it becomes open source
-- unit testing/coverage
-- made with mainstream technologies: JavaScript/React to make it easy for other developers to get into the code
-- as contributor friendly as possible (contributing guide, get-started-issues, etc.), and start building community around the app development
-
-# About/Purpose/History
-
-TODO add details here
-
-BogApp builds upon the following projects
-
-- 2017 *BogApp* 
-- 2016 Response to *Request for Tender* for danish public library app.
-- 2016 *MoBibl*
-- 2016 *Den Åbne Platform*
-- 2015 *BibApp*
-- 2015/2016 Semantic markup of bibliographic data (*RDF*)
-- 2014/2015 *Related-webservice*
-- 2014 *Visualisering-af-relationer*
-
+- ISBN barcode scanner
+- use JavaScript/React to make it easier for other developers to work on
+- use Material Design to have a clear design direction / guidelines. (possibly reuse part of DDB-app when it gets released, and if design is good).
+- only take core functionality, i.e. most likely skip experimental facet browser from [mobibl](https://mobibl.solsort.com) etc.
+- server-side rendering, - for better ranking of bibliographical pages (with semantic markup) in search results.
+- better documentation about joining, more contributor/community oriented
+- more unit testing, add code coverage
