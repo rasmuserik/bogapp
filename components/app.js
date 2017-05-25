@@ -4,6 +4,8 @@ import React from 'react';
 import {Provider} from 'react-redux';
 import ToolBar from './toolbar';
 import Head from 'next/head';
+import ThemeProvider from 'react-toolbox/lib/ThemeProvider';
+import theme from '../static/theme';
 
 let ControlledToolBar = connect(
   state => ({showMenu: state.getIn(['ui', 'showMenu'])}),
@@ -26,26 +28,29 @@ export function app(Component) {
       let title = this.props.title;
       return (
         <Provider store={store}>
-          <div>
-            <Head>
-              <meta name="viewport" content="width=device-width" />
-              <link
-                rel="stylesheet"
-                href="https://unpkg.com/react-md@1.0.13/dist/react-md.light_green-light_blue.min.css"
-              />
-              <link
-                rel="stylesheet"
-                href="https://fonts.googleapis.com/icon?family=Material+Icons|Roboto:400,500,700"
-              />
-              <link rel="icon" href="/icon.png" />
-              <title>{title}</title>
-              <style>
-                {`body { margin: 0 }`}
-              </style>
-            </Head>
-            <ControlledToolBar title={title} />
-            <Component title={title} />
-          </div>
+          <ThemeProvider theme={theme}>
+            <div>
+              <Head>
+                <meta name="viewport" content="width=device-width" />
+                <link href="/static/theme.css" rel="stylesheet" />
+                <link
+                  rel="stylesheet"
+                  href="https://unpkg.com/react-md@1.0.13/dist/react-md.indigo-pink.min.css"
+                />
+                <link
+                  rel="stylesheet"
+                  href="https://fonts.googleapis.com/icon?family=Material+Icons|Roboto:400,500,700"
+                />
+                <link rel="icon" href="/icon.png" />
+                <title>{title}</title>
+                <style>
+                  {`body { margin: 0 }`}
+                </style>
+              </Head>
+              <ControlledToolBar title={title} />
+              <Component title={title} />
+            </div>
+          </ThemeProvider>
         </Provider>
       );
     }
@@ -53,7 +58,7 @@ export function app(Component) {
 
   App.defaultProps = {
     title: 'BogApp.dk'
-  }
+  };
 
   /** 
    * Figure out host/url

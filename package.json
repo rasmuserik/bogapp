@@ -11,25 +11,44 @@
     "export": "next build && next export",
     "documentation": "documentation build components/*.js pages/*.js lib/*.js -f html -g true -o out/codedoc",
     "gh-pages": "cp -a gh-pages/* gh-pages/.[a-z]* out/ && gh-pages -t -d out",
-    "release": "rm -rf out ; npm run export && npm run documentation && npm run gh-pages"
+    "release": "rm -rf out ; npm run export && npm run documentation && npm run gh-pages",
+    "toolbox": "react-toolbox-themr"
   },
   "dependencies": {
+    "classnames": "^2.2.5",
     "immutable": "^3.8.1",
-    "jest": "^20.0.1",
     "lodash.throttle": "^4.1.1",
     "next": "^3.0.0-beta3",
     "openplatform": "^0.0.1",
     "react": "^15.5.4",
+    "react-addons-css-transition-group": "^15.5.2",
     "react-dom": "^15.5.4",
     "react-md": "^1.0.14",
     "react-redux": "^5.0.4",
+    "react-toolbox": "^2.0.0-beta.8",
     "redux": "^3.6.0"
   },
   "devDependencies": {
+    "jest": "^20.0.1",
     "babel-jest": "^20.0.3",
     "documentation": "4.0.0-rc.1",
     "gh-pages": "^1.0.0",
     "prettier": "^1.2.2",
-    "react-test-renderer": "^15.5.4"
+    "react-test-renderer": "^15.5.4",
+    "react-toolbox-themr": "^1.0.2"
+  },
+  "reactToolbox": {
+    "include": [
+      "BUTTON",
+      "DATE_PICKER"
+    ],
+    "customProperties": {
+      "animation-duration": "0.3s",
+      "color-accent": "var(--palette-pink-a200)",
+      "color-accent-dark": "var(--palette-pink-700)",
+      "color-primary-contrast": "var(--color-dark-contrast)",
+      "color-accent-contrast": "var(--color-dark-contrast)"
+    },
+    "output": "static"
   }
 }
