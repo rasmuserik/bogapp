@@ -22,8 +22,8 @@ export default ({title, showMenu, toggleMenu, openWork}) => (
         title="BogApp.dk"
         nav={<Button onClick={toggleMenu} key="nav" icon>close</Button>}
       />
-      <Link href="/bibdata">
-        <Button flat style={{width: '100%'}} label="Work info" />
+      <Link href="/bibdata?id=ting:1234">
+        <Button flat style={{width: '100%'}} label="Bibdata - test" />
       </Link>
       <Link href="/about">
         <Button flat style={{width: '100%'}} label="About" />
